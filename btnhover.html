@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover animation on button</title>
+    <style>
+      .main-box {
+        width: 70%;
+        border: 3px solid black;
+        height: 50vh;
+        margin: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+      }
+      button {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+      }
+      .btn-1 {
+        background-color: rgb(100, 243, 100);
+        border: 2px solid black;
+      }
+      .btn-1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-5px);
+      }
+      .btn-2 {
+        border: 2px solid red;
+        background-color: white;
+      }
+      .btn-2:hover {
+        color: white;
+        background-color: red;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="btn"><button class="btn-1">Submit</button></div>
+      <div class="btn"><button class="btn-2">Delete</button></div>
+    </div>
+  </body>
+</html>

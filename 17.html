@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image with Opacity</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background-image: url("https://wallpapercave.com/wp/wp1893639.png");
+        opacity: 0.5;
+        width: 100%;
+        height: 100vh;
+      }
+      .text {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        z-index: 2;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+    <div class="text">Foreground Text Over a Background Image</div>
+  </body>
+</html>
